@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+	function seoUrl(\$string) {
+	    \$string = strtolower(\$string);
+	    \$string = preg_replace("/[^a-z0-9_\s-]/", "", \$string);
+	    \$string = preg_replace("/[\s-]+/", " ", \$string);
+	    \$string = preg_replace("/[\s_]/", "-", \$string);
+	    return \$string;
+	}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>php-seourl</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

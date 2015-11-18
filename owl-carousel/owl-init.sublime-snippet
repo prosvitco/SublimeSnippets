@@ -1,0 +1,28 @@
+<snippet>
+	<content><![CDATA[
+  	jQuery('.owl-carousel').owlCarousel({
+	    loop:true,
+	    margin:0,
+	    responsiveClass:true,
+	    responsive:{
+	        0:{
+	            items:1,
+	            nav:true
+	        },
+	        768:{
+	            items:3,
+	            nav:false
+	        },
+	        1025:{
+	            items:5,
+	            nav:true,
+	            loop:false
+	        }
+	    }
+	})
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>owl-init</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
